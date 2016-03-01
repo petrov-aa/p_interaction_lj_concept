@@ -4,6 +4,7 @@
 }
 html {
 	font: 16px serif;
+	-webkit-text-size-adjust: none;
 }
 body {
 	background: #FFFBE2;
@@ -41,7 +42,6 @@ body {
 	font-size: 20px;
 }
 .settings-disktypes-div {
-	width: 300px;
 }
 .settings-disktypes-div input {
 	margin-right: 10px;
