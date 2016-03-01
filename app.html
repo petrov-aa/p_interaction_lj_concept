@@ -9,8 +9,54 @@
 </head>
 <body>
 
+	<div id="info-div">
+		<p>Приложение, показывающее концепцию использования потенциала Леннард-Джонса c моделью плоских жестких дисков.</p>
+		<p style="text-align:right">1 марта 2016 - Александр Петров - petrov.aa@phystech.edu</p>
+	</div>
+
 	<div id="settings-div">
-		<div class="title">Настройки:</div>
+		<div class="title"><a href="#settings-div" class="nav-a">Настройки</a></div>
+		<div>
+			<div class="subtitle">Выберите тип системы:</div>
+			<div class="settings-disktypes-div">
+				<div>
+					<div class="fl"><input type="radio" id="s_dt1" name="disktypes" value="disktypes1" checked></div>
+					<div class="fl"><a href="javascript://" onclick="document.getElementById('s_dt1').checked=true">- только диски одного типа (тип A)</a></div>
+					<div class="cb"></div>
+				</div>
+				<div>
+					<div class="fl"><input type="radio" id="s_dt2" name="disktypes" value="disktypes2"></div>
+					<div class="fl"><a href="javascript://" onclick="document.getElementById('s_dt2').checked=true">- диски обоих типов</a></div>
+					<div class="cb"></div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="subtitle">Выберите несоразмерность:</div>
+			<div class="settings-diameters-div">
+				<div>
+					<div class="fl" style="padding-top:5px">Диаметр дисков типа A: </div>
+					<div class="fl"><input type="text"name="diam1" value="1.0" checked></div>
+					<div class="cb"></div>
+				</div>
+				<div class="settings-diameters-div-div">
+					<div class="fl" style="padding-top:5px">Диаметр дисков типа B: </div>
+					<div class="fl"><input type="text" name="diam2" value="0.9"></div>
+					<div class="cb"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="launch-div">
+		<div class="title"><a href="#launch-div" class="nav-a">Управление моделированием</a></div>
+		<div style="margin-top:5px">
+			<input class="launch-button" type="button" value="1. Создать систему">
+			<input class="launch-button" type="button" value="2. Запустить моделирование" disabled="true">
+			<input class="launch-button" type="button" value="3. Остановить моделирование" disabled="true">
+		</div>
+	</div>
+	<div id="system-div">
+
 	</div>
 
 </body>
