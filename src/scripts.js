@@ -121,14 +121,21 @@ function drawDiskLine (context) {
 	context.closePath();
 	for (var i=XSTART;i<=XEND;i+=0.5) {
 		context.beginPath();
-		context.moveTo(mapX(i)+PIXEL,DISKLINEPOSY+PIXEL-7);
-		context.lineTo(mapX(i)+PIXEL,DISKLINEPOSY+PIXEL+7);
+		context.moveTo(mapX(i)+PIXEL,DISKLINEPOSY-7);
+		context.lineTo(mapX(i)+PIXEL,DISKLINEPOSY+7);
 		context.stroke();
 		context.closePath();
 		context.font="16px sans-serif"
 		context.textAlign="center";
 		context.textBaseline="alphabetic";
 		context.fillText(i,mapX(i),DISKLINEPOSY+30);
+	}
+	for (var i=XSTART;i<=XEND;i+=0.1) {
+		context.beginPath();
+		context.moveTo(mapX(i)+PIXEL,DISKLINEPOSY-3);
+		context.lineTo(mapX(i)+PIXEL,DISKLINEPOSY+3);
+		context.stroke();
+		context.closePath();
 	}
 }
 
@@ -140,19 +147,19 @@ function drawDisks (context) {
 		else
 			context.fillStyle="rgba(0,255,0,0.5)";
 		context.beginPath();
-		context.arc(mapX(diskX[i])+PIXEL,DISKLINEPOSY+PIXEL,mapY(diskR[i]),0,Math.PI*2,true);
+		context.arc(mapX(diskX[i]),DISKLINEPOSY,mapY(diskR[i]),0,Math.PI*2,true);
 		context.fill();
 		context.closePath();
 		context.beginPath();
 		context.fillStyle=diskColor[i];
-		context.arc(mapX(diskX[i])+PIXEL,AXISORIGPOSY+PIXEL,5,0,Math.PI*2,true);
+		context.arc(mapX(diskX[i]),AXISORIGPOSY,5,0,Math.PI*2,true);
 		context.fill();
 		context.closePath();
 		context.beginPath();
 		context.strokeStyle=diskColor[i];
 		console.log(diskR[i]);
-		context.moveTo(mapX(diskX[i])+PIXEL,DISKLINEPOSY-mapY(diskR[i])+PIXEL);
-		context.lineTo(mapX(diskX[i])+PIXEL,UmapY(AXISYSTART)+PIXEL);
+		context.moveTo(mapX(diskX[i])+PIXEL,DISKLINEPOSY-mapY(diskR[i]));
+		context.lineTo(mapX(diskX[i])+PIXEL,UmapY(AXISYSTART));
 		context.stroke();
 		context.closePath();
 	}
@@ -194,7 +201,7 @@ function drawUvsXAxis (context) {
 		context.closePath();
 	}
 
-	/* X Axis */
+	/* X Tics */
 
 	context.strokeStyle = "#000";
 	context.beginPath();
@@ -203,10 +210,9 @@ function drawUvsXAxis (context) {
 	context.stroke();
 	context.closePath();
 	for (var i=XSTART;i<=XEND;i+=0.5) {
-		
 		context.beginPath();
-		context.moveTo(mapX(i)+PIXEL,AXISORIGPOSY+PIXEL-7);
-		context.lineTo(mapX(i)+PIXEL,AXISORIGPOSY+PIXEL+7);
+		context.moveTo(mapX(i)+PIXEL,AXISORIGPOSY-7);
+		context.lineTo(mapX(i)+PIXEL,AXISORIGPOSY+7);
 		context.stroke();
 		context.closePath();
 		context.font="16px sans-serif"
@@ -214,8 +220,15 @@ function drawUvsXAxis (context) {
 		context.textBaseline="alphabetic";
 		context.fillText(i,mapX(i),AXISORIGPOSY+30);
 	}
+	for (var i=XSTART;i<=XEND;i+=0.1) {
+		context.beginPath();
+		context.moveTo(mapX(i)+PIXEL,AXISORIGPOSY-3);
+		context.lineTo(mapX(i)+PIXEL,AXISORIGPOSY+3);
+		context.stroke();
+		context.closePath();
+	}
 
-	/* Y Axis */
+	/* Y Tics */
 
 	context.beginPath();
 	context.moveTo(ORIGPOSX+PIXEL,UmapY(AXISYEND)+PIXEL);
@@ -224,8 +237,8 @@ function drawUvsXAxis (context) {
 	context.closePath();
 	for (var i=AXISYSTART;i<=AXISYEND;i+=1) {
 		context.beginPath();
-		context.moveTo(ORIGPOSX+PIXEL-7,UmapY(i)+PIXEL);
-		context.lineTo(ORIGPOSX+PIXEL+7,UmapY(i)+PIXEL);
+		context.moveTo(ORIGPOSX-7,UmapY(i)+PIXEL);
+		context.lineTo(ORIGPOSX+7,UmapY(i)+PIXEL);
 		context.stroke();
 		context.closePath();
 		context.font="16px sans-serif"
