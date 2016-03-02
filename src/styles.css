@@ -38,26 +38,45 @@ body {
 	font-size: 30px;
 }
 .subtitle {
-	margin-top: 5px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 	font-size: 20px;
+}
+#settings-div a {
+	color: #000;
+	text-decoration: none;
+}
+#settings-div a:hover {
+	text-decoration: underline;
 }
 .settings-disktypes-div {
 }
-.settings-disktypes-div input {
+.settings-disktypes-div input, .settings-other-div input {
 	margin-right: 10px;
 	margin-top: 3px;
 }
 .settings-diameters-div {
 	width: 500px;
 }
-.settings-diameters-div-div {
+.settings-diameters-div-div, .settings-other-div-div {
 	margin-top: 5px;
 }
-.settings-diameters-div input {
+.settings-diameters-div input, .settings-other-div input {
 	width: 50px;
 	margin-left: 10px;
 	padding: 5px;
 }
 .launch-button {
 	padding: 10px;
+}
+#loader_placeholder {
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 32px;
+	height: 32px;
+}
+.loader {
+	background: url("loader.gif") no-repeat;
+	width: 32px;
+	height: 32px;
 }
