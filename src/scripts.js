@@ -278,7 +278,7 @@ function calcLJ (context) {
 function drawUvsX (context) {
 	calcLJ();
 	context.strokeStyle = "blue";
-	context.lineWidth=2;
+	context.lineWidth=1;
 	context.beginPath();
 	context.moveTo(mapX(x[0]),UmapY(LJ[0]));
 	for (var i=1;i<x.length;i++) {

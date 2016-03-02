@@ -15,7 +15,7 @@
 	</div>
 
 	<div id="settings-div">
-		<div class="title"><a href="#settings-div" class="nav-a">Настройки</a></div>
+		<div class="title"><a href="#settings-div" class="nav-a">Параметры</a></div>
 		<div>
 			<div class="subtitle">Выберите тип системы:</div>
 			<div class="settings-disktypes-div">
@@ -35,13 +35,15 @@
 			<div class="subtitle">Выберите несоразмерность:</div>
 			<div class="settings-diameters-div">
 				<div>
-					<div class="fl" style="padding-top:5px">Диаметр дисков типа A: </div>
+					<div class="fl" style="padding-top:2px">Диаметр (<span style="font:italic 1.2em serif">d<sub style="font-style:normal">A</sub></span>) дисков типа A: </div>
 					<div class="fl"><input type="text" oninput="changeValues();" id="diam1" name="diam1" value="1.0"></div>
+					<div class="fl" style="margin-left:10px;padding-top:1px"> рекомендуется 0 &lt; <span style="font:italic 1.2em serif">d<sub style="font-style:normal">A</sub></span> &le; 1.4</div>
 					<div class="cb"></div>
 				</div>
 				<div class="settings-diameters-div-div">
-					<div class="fl" style="padding-top:5px">Диаметр дисков типа B: </div>
+					<div class="fl" style="padding-top:2px">Диаметр (<span style="font:italic 1.2em serif">d<sub style="font-style:normal">B</sub></span>) дисков типа B: </div>
 					<div class="fl"><input type="text" oninput="changeValues();" id="diam2" name="diam2" value="0.9"></div>
+					<div class="fl" style="margin-left:10px;padding-top:1px"> рекомендуется 0 &lt; <span style="font:italic 1.2em serif">d<sub style="font-style:normal">B</sub></span> &le; 1.4</div>
 					<div class="cb"></div>
 				</div>
 			</div>
@@ -62,8 +64,11 @@
 					<div class="fl"><input type="text" id="sigma12" name="sigma12" value="" disabled="true"></div>
 					<div class="cb"></div>
 				</div>
+			</div>
+			<div class="subtitle">Настройка графика <i class="font-family:serif">U(x)</i>:</div>
+			<div class="settings-other-div">
 				<div class="settings-other-div-div">
-					<div class="fl" style="padding-top:5px">множитель U(x) по оси Y = </div>
+					<div class="fl" style="padding-top:5px">множитель <i style="font-size:1.2em;font-family:serif">U(x)</i> по оси Y = </div>
 					<div class="fl"><input type="text" id="epsilonMagn" name="epsilonMagn" value="5"></div>
 					<div style="padding-top:6px;font-style:italic"><a href="javascript://" onclick="applyEpsMagn();">применить</a></div>
 					<div class="cb"></div>
