@@ -150,8 +150,9 @@ function drawDisks (context) {
 		context.closePath();
 		context.beginPath();
 		context.strokeStyle=diskColor[i];
-		context.moveTo(mapX(diskX[i])+PIXEL,DISKLINEPOSY+PIXEL);
-		context.lineTo(mapX(diskX[i])+PIXEL,AXISORIGPOSY+PIXEL);
+		console.log(diskR[i]);
+		context.moveTo(mapX(diskX[i])+PIXEL,DISKLINEPOSY-mapY(diskR[i])+PIXEL);
+		context.lineTo(mapX(diskX[i])+PIXEL,UmapY(AXISYSTART)+PIXEL);
 		context.stroke();
 		context.closePath();
 	}
@@ -308,7 +309,7 @@ function calcStop() {
 var dt = 0.002;
 var mu = 0.01; // Friction coefficient
 
-var redrawEvery=9;
+var redrawEvery=4;
 var redrawEvery_c = 0;
 
 var vx;

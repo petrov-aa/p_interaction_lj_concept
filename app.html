@@ -72,12 +72,12 @@
 		</div>
 	</div>
 	<div id="launch-div">
-		<div class="title"><a href="#launch-div" class="nav-a">Управление моделированием</a></div>
+		<div class="title"><a href="#launch-div" class="nav-a">Управление динамикой</a></div>
 		<div style="margin-top:5px">
 			<div class="fl">
 			<input class="launch-button" type="button" onclick="calcStop();createSystem();" value="1. Создать систему">
-			<input class="launch-button" id="buttonStart" type="button" onclick="calcStart();" value="2. Запустить моделирование" disabled="true">
-			<input class="launch-button" id="buttonStop" type="button" onclick="calcStop();" value="3. Остановить моделирование" disabled="true">
+			<input class="launch-button" id="buttonStart" type="button" onclick="calcStart();" value="2. Включить динамику" disabled="true">
+			<input class="launch-button" id="buttonStop" type="button" onclick="calcStop();" value="3. Остановить динамику" disabled="true">
 			<input class="launch-button" id="buttonCenter" type="button" onclick="calcCenter();" style="font-family:monospace" value="К центру: Off" disabled="true">
 			</div>
 			<div class="fr" id="loader_placeholder"></div>
@@ -85,7 +85,7 @@
 		</div>
 	</div>
 	<div id="system-div">
-		<div id="canv">Для начала нажмите кнопку "Создать систему" выше.</div>
+		<div id="canv">Для продолжения нажмите кнопку "Создать систему" выше.</div>
 		<canvas id="canvas" width="800" height="543"><p>Ваш браузер не поддерживает рисование. Необходимо обновить браузер.</p></canvas>
 	</div>
 
