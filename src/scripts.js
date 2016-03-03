@@ -4,7 +4,7 @@ This code is written by Alexander Petrov (E-mail: petrov.aa@phystech.edu)
 
 LICENCE AGREEMENT
 
-The owner of this code doesn't care about how you will use it.
+The author of this code doesn't care about how you will use it.
 Use it whatever reasons or whatever purpose you have.
 
 ***/
@@ -403,7 +403,7 @@ function calcStep() {
 function calcCenter () {
 	toggleDragToCenter = !toggleDragToCenter;
 	if(toggleDragToCenter)
-		document.getElementById('buttonCenter').value="К центру: On ";
+		document.getElementById('buttonCenter').value="К центру: On";
 	else
 		document.getElementById('buttonCenter').value="К центру: Off";
 }

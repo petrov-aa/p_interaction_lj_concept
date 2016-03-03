@@ -1,3 +1,14 @@
+/***
+
+This code is written by Alexander Petrov (E-mail: petrov.aa@phystech.edu)
+
+LICENCE AGREEMENT
+
+The author of this code doesn't care about how you will use it.
+Use it whatever reasons or whatever purpose you have.
+
+***/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -66,6 +77,8 @@ body {
 }
 .launch-button {
 	padding: 10px;
+	height: 40px;
+	width: 180px;
 }
 #loader_placeholder {
 	margin-left: 20px;

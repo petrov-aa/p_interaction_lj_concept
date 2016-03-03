@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<!--
+
+This code is written by Alexander Petrov (E-mail: petrov.aa@phystech.edu)
+
+LICENCE AGREEMENT
+
+The author of this code doesn't care about how you will use it.
+Use it whatever reasons or whatever purpose you have.
+
+-->
+
 <html>
 <head>
 	<meta charset="utf-8">
@@ -50,17 +61,17 @@
 			<div class="subtitle">Внутренние параметры:</div>
 			<div class="settings-other-div">
 				<div>
-					<div class="fl" style="padding-top:5px">Sigma A-A = </div>
+					<div class="fl" style="padding-top:5px">&sigma;<sub>A–A</sub> = </div>
 					<div class="fl"><input type="text" id="sigma11" name="sigma11" value="" disabled="true"></div>
 					<div class="cb"></div>
 				</div>
 				<div class="settings-other-div-div">
-					<div class="fl" style="padding-top:5px">Sigma B-B = </div>
+					<div class="fl" style="padding-top:5px">&sigma;<sub>B–B</sub> = </div>
 					<div class="fl"><input type="text" id="sigma22" name="sigma22" value="" disabled="true"></div>
 					<div class="cb"></div>
 				</div>
 				<div class="settings-other-div-div">
-					<div class="fl" style="padding-top:5px">Sigma A-B = </div>
+					<div class="fl" style="padding-top:5px">&sigma;<sub>A–B</sub> = </div>
 					<div class="fl"><input type="text" id="sigma12" name="sigma12" value="" disabled="true"></div>
 					<div class="cb"></div>
 				</div>
@@ -83,7 +94,7 @@
 			<input class="launch-button" type="button" onclick="calcStop();createSystem();" value="1. Создать систему">
 			<input class="launch-button" id="buttonStart" type="button" onclick="calcStart();" value="2. Включить динамику" disabled="true">
 			<input class="launch-button" id="buttonStop" type="button" onclick="calcStop();" value="3. Остановить динамику" disabled="true">
-			<input class="launch-button" id="buttonCenter" type="button" onclick="calcCenter();" style="font-family:monospace" value="К центру: Off" disabled="true">
+			<input class="launch-button" id="buttonCenter" type="button" onclick="calcCenter();" value="К центру: Off" disabled="true">
 			</div>
 			<div class="fr" id="loader_placeholder"></div>
 			<div class="cb"></div>
