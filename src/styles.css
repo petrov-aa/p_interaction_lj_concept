@@ -1,0 +1,93 @@
+/***
+
+This code is written by Alexander Petrov (E-mail: petrov.aa@phystech.edu)
+
+LICENCE AGREEMENT
+
+The author of this code doesn't care about how you will use it.
+Use it whatever reasons or whatever purpose you have.
+
+***/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font: 16px serif;
+}
+body {
+	background: #FFFBE2;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.cb {
+	clear: both;
+}
+#info-div, #settings-div, #launch-div, #system-div {
+	width: 800px;
+	margin: 10px auto;
+	padding: 10px;
+	background: #FFF;
+}
+.nav-a {
+	color: #000;
+	text-decoration: none;
+}
+.nav-a:hover {
+	text-decoration: underline;
+}
+#system-div {
+	height: 543px;
+}
+.title {
+	font-size: 30px;
+}
+.subtitle {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+#settings-div a {
+	color: #000;
+	text-decoration: none;
+}
+#settings-div a:hover {
+	text-decoration: underline;
+}
+.settings-disktypes-div {
+}
+.settings-disktypes-div input, .settings-other-div input {
+	margin-right: 10px;
+	margin-top: 3px;
+}
+.settings-diameters-div {
+}
+.settings-diameters-div-div, .settings-other-div-div {
+	margin-top: 5px;
+}
+.settings-diameters-div input, .settings-other-div input {
+	width: 50px;
+	margin-left: 10px;
+	padding: 5px;
+}
+.launch-button {
+	padding: 10px;
+	height: 40px;
+	width: 180px;
+}
+#loader_placeholder {
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 32px;
+	height: 32px;
+}
+.loader {
+	background: url("loader.gif") no-repeat;
+	width: 32px;
+	height: 32px;
+}
