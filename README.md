@@ -17,7 +17,7 @@
 
 ### В интернете
 
-* Живое использование доступно по [ссылке](petrov-aa.github.io/p_interaction_lj_concept)
+* Живое использование доступно по [ссылке](https://petrov-aa.github.io/p_interaction_lj_concept)
 
 ### На компьютере
 
